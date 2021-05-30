@@ -1,0 +1,33 @@
+export type ThemeColors = {
+  primary: string
+  secondary: string
+  normal: string
+  fighting: string
+  flying: string
+  poison: string
+  ground: string
+  rock: string
+  bug: string
+  ghost: string
+  steel: string
+  fire: string
+  water: string
+  grass: string
+  electric: string
+  psychic: string
+  ice: string
+  dragon: string
+  dark: string
+  fairy: string
+  shadow: string
+  unknown: string
+  red: string
+  green: string
+  blue: string
+  yellow: string
+  purple: string
+  brown: string
+  darkGray: string
+  gray: string
+  black: string
+}

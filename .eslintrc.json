@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:jsx-control-statements/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "jsx-control-statements"
+  ],
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    "import/export": 0,
+    "no-unused-vars": 0,
+    "node/no-deprecated-api": 0,
+    "no-inner-declarations": 0,
+    "no-redeclare": 0,
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["off"],
+    "no-unused-expressions": 0,
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-handler-names": 0,
+    "react/jsx-max-props-per-line": [2, { "when": "always" }],
+    "react/prop-types": [2, { "skipUndeclared": true }],
+    "react/jsx-no-undef": 0,
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": false
+    }]
+  }
+}
