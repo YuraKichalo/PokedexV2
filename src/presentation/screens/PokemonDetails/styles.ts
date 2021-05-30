@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     flex: 1
   },
   bottomContentContainer: {
-    flex: 1.3,
+    flex: 1.5,
     backgroundColor: COLORS.primary,
     borderTopRightRadius: 50,
     borderTopLeftRadius: 50
@@ -49,11 +49,14 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     width: '55%',
     height: '50%',
-    marginTop: '-50%'
+    marginTop: '-25%'
   },
   tabsController: {
     paddingHorizontal: 20,
-    marginTop: -15,
+    marginTop: -20,
     marginBottom: 20
+  },
+  scrollContentStyle: {
+    height: 1000
   }
 })

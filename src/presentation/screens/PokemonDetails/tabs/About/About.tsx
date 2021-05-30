@@ -108,7 +108,10 @@ export const About = observer(({ pokemon }: AboutProps) => {
       <Body style={styles.subtitle}>
         {Strings.pokemonDetails.about.training}
       </Body>
-      <Row centered>
+      <Row
+        centered
+        style={styles.baseExperienceRow}
+      >
         <Body style={styles.sectionSubtitle}>
           Base exp
         </Body>
@@ -116,6 +119,18 @@ export const About = observer(({ pokemon }: AboutProps) => {
           {viewModel.pokemon.baseExperience}
         </Body>
       </Row>
+      <Body style={styles.subtitle}>
+        {Strings.pokemonDetails.about.baseInfo}
+      </Body>
+      <Body>
+        Lorem ipsum dolor sit amet, mel te ocurreret vituperata,
+        at his cibo summo. Iusto meliore veritus est an, ex idque etiam cum,
+        cu odio vivendo mel. Etiam dicit ea usu, ea eos affert omnium, id eum
+        elit oblique urbanitas. Cum recteque appellantur te. His in tollit doctus
+        inciderint, ubique mediocrem reformidans his ut. Falli oratio torquatos ne
+        duo, qui ei dolor nostrud definitiones. Lorem ipsum dolor sit amet, mel te ocurreret vituperata,
+        at his cibo summo.
+      </Body>
     </View>
   )
 })

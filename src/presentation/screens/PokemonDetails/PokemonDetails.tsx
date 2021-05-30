@@ -77,16 +77,16 @@ export const PokemonDetails = observer(() => {
           selectedTabIndex={viewModel.swiperActiveIndex}
           style={styles.tabsController}
         />
-        <ScrollView>
-          <Swiper
-            loop={false}
-            showsPagination={false}
-            onIndexChanged={viewModel.setSwiperActiveIndex}
-          >
-            <Tabs.About pokemon={pokemon} />
-            <Tabs.BaseStats pokemon={pokemon} />
-            <Tabs.Evolution pokemon={pokemon} />
-          </Swiper>
+        <ScrollView contentContainerStyle={styles.scrollContentStyle}>
+        <Swiper
+          loop={false}
+          showsPagination={false}
+          onIndexChanged={viewModel.setSwiperActiveIndex}
+        >
+          <Tabs.About pokemon={pokemon} />
+          <Tabs.BaseStats pokemon={pokemon} />
+          <Tabs.Evolution pokemon={pokemon} />
+        </Swiper>
         </ScrollView>
       </View>
     </Screen>

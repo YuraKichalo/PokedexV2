@@ -79,5 +79,8 @@ export const styles = StyleSheet.create({
   },
   eggGroupsName: {
     marginRight: 25
+  },
+  baseExperienceRow: {
+    marginBottom: 20
   }
 })

@@ -38,7 +38,8 @@ export const english = {
       color: 'Color',
       location: 'Location',
       training: 'Training',
-      baseEXP: 'Base EXP'
+      baseEXP: 'Base EXP',
+      baseInfo: 'Base info'
     },
     baseStats: {
       typeDefenses: 'Type defenses'
