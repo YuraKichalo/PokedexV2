@@ -7,7 +7,7 @@ import { useRoute } from '@react-navigation/native'
 import { styles } from './styles'
 import { Body, Header, Row, Screen, Title } from 'presentation/components'
 import { PokemonDetailsRouteProp } from './PokemonDetailsRouteProp'
-import { capitalize, getTypeColor } from 'presentation/utils'
+import { capitalize, getTypeColor, getGradientColors } from 'presentation/utils'
 import { TabsController } from './components/TabsController'
 import * as Tabs from './tabs'
 import { PokemonDetailsViewModel } from './PokemonDetailsViewModel'
@@ -31,11 +31,7 @@ export const PokemonDetails = observer(() => {
     <Screen style={{ backgroundColor: getTypeColor(pokemon.types[0]) }}>
       <StatusBar barStyle='light-content' />
       <LinearGradient
-        colors={
-          pokemon.types.length > 1
-            ? [getTypeColor(pokemon.types[0])!, getTypeColor(pokemon.types[1])!]
-            : [getTypeColor(pokemon.types[0])!, getTypeColor(pokemon.types[0])!]
-        }
+        colors={getGradientColors(pokemon.types)}
         locations={[0.6, 0]}
         style={styles.container}
       >
